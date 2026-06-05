@@ -1,6 +1,23 @@
-somerch-docs-github-pages-files/
+somerch-docs-beautified-site/
 ├── _config.yml
+├── _layouts/
+│   └── default.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   └── img/
+│       ├── favicon.svg
+│       ├── somerch-logo.svg
+│       └── somerch-logo-mark.svg
 ├── index.md
+├── getting-started.md
+├── platform-availability.md
+├── how-somerch-works.md
+├── order-lifecycle.md
+├── approvals.md
+├── inventory-and-warehousing.md
+├── fulfillment-and-shipping.md
+├── employee-gifting.md
+├── faq.md
 ├── 404.md
-├── CNAME.example
 └── TREE.txt

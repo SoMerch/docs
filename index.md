@@ -1,92 +1,171 @@
-# SoMerch Docs
-
-**Merch that moves with your team.**
-
-SoMerch is a software-powered corporate merch platform and service partner for distributed companies across Europe.
-
-We help teams plan, produce, store, and ship branded merch from one place — combining curated products, in-house production, warehousing, inventory visibility, approvals, and EU-wide fulfillment.
-
+---
+title: SoMerch Docs
+description: Public documentation for SoMerch workflows, platform features, fulfillment, warehousing, EU shipping, approvals, and managed corporate merch operations.
 ---
 
-## Start here
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Software-powered corporate merch</p>
+      <h1>Merch operations, documented from idea to delivery.</h1>
+      <p class="hero-lead">
+        Public documentation for SoMerch workflows, platform features, fulfillment,
+        warehousing, EU shipping, approvals, and managed corporate merch operations.
+      </p>
 
-| Page | Description |
-|---|---|
-| [Getting Started](getting-started.md) | Basic overview for new customers and teams evaluating SoMerch. |
-| [Platform Availability](platform-availability.md) | Web, iOS, Android, and Windows app availability. |
-| [How SoMerch Works](how-somerch-works.md) | End-to-end workflow from idea to delivery. |
-| [Order Lifecycle](order-lifecycle.md) | Typical order stages from quote to fulfillment. |
-| [Approvals](approvals.md) | Approval workflows, budget tags, and internal review steps. |
-| [Inventory and Warehousing](inventory-and-warehousing.md) | Stock visibility, storage, SKU tracking, and managed inventory. |
-| [Fulfillment and Shipping](fulfillment-and-shipping.md) | Pick, pack, ship, tracking, returns, and EU-wide delivery. |
-| [Employee Gifting](employee-gifting.md) | Redeem links, onboarding packs, office shipments, and team gifting. |
-| [FAQ](faq.md) | Common questions about SoMerch. |
+      <div class="hero-actions">
+        <a class="button button-primary" href="/getting-started.html">Start with the docs</a>
+        <a class="button button-secondary" href="https://somerch.co">Visit SoMerch</a>
+        <a class="button button-secondary" href="https://github.com/SoMerch">GitHub</a>
+      </div>
+    </div>
 
----
+    <aside class="hero-card">
+      <h2>One managed workflow</h2>
+      <ol class="workflow-list">
+        <li><span>1</span>Choose products and use case</li>
+        <li><span>2</span>Request quote and approve details</li>
+        <li><span>3</span>Produce, check, and store stock</li>
+        <li><span>4</span>Pick, pack, ship, and track delivery</li>
+      </ol>
+    </aside>
+  </div>
+</section>
 
-## What SoMerch helps with
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Start here</p>
+      <h2>Understand how SoMerch works.</h2>
+      <p>
+        These pages explain the customer workflow, order lifecycle, platform access,
+        inventory, warehousing, fulfillment, and employee gifting flows.
+      </p>
+    </div>
 
-SoMerch brings corporate merch operations into one managed workflow:
+    <div class="card-grid">
+      <a class="card" href="/getting-started.html">
+        <div class="card-icon">🚀</div>
+        <h3>Getting Started</h3>
+        <p>Basic overview for new customers and teams evaluating SoMerch.</p>
+      </a>
 
-- curated product selection
-- brand-consistent mockups
-- in-house production and quality control
-- kitting and pack-ins
-- warehousing and inventory visibility
-- multi-address and multi-country shipping
-- approval workflows
-- order and shipment tracking
-- managed fulfillment for distributed teams
+      <a class="card" href="/how-somerch-works.html">
+        <div class="card-icon">⚙️</div>
+        <h3>How SoMerch Works</h3>
+        <p>End-to-end workflow from product idea to final delivery.</p>
+      </a>
 
----
+      <a class="card" href="/order-lifecycle.html">
+        <div class="card-icon">📦</div>
+        <h3>Order Lifecycle</h3>
+        <p>Typical order stages from quote request to production and fulfillment.</p>
+      </a>
 
-## Built for distributed teams
+      <a class="card" href="/approvals.html">
+        <div class="card-icon">✅</div>
+        <h3>Approvals</h3>
+        <p>Approval workflows, budget tags, and internal review steps.</p>
+      </a>
 
-SoMerch is designed for companies with remote employees, multiple offices, onboarding waves, event kits, and cross-border shipping needs.
+      <a class="card" href="/inventory-and-warehousing.html">
+        <div class="card-icon">🏬</div>
+        <h3>Inventory and Warehousing</h3>
+        <p>Stock visibility, SKU tracking, storage, and managed inventory.</p>
+      </a>
 
-Common use cases include:
+      <a class="card" href="/fulfillment-and-shipping.html">
+        <div class="card-icon">🚚</div>
+        <h3>Fulfillment and Shipping</h3>
+        <p>Pick, pack, ship, tracking, returns, and EU-wide delivery.</p>
+      </a>
 
-- employee onboarding packs
-- remote team gifting
-- event and conference kits
-- office restocking
-- partner and customer gifts
-- internal brand campaigns
-- managed inventory programs
+      <a class="card" href="/employee-gifting.html">
+        <div class="card-icon">🎁</div>
+        <h3>Employee Gifting</h3>
+        <p>Onboarding packs, remote employee gifts, redeem links, and team campaigns.</p>
+      </a>
 
----
+      <a class="card" href="/platform-availability.html">
+        <div class="card-icon">📱</div>
+        <h3>Platform Availability</h3>
+        <p>Web, iOS, Android, and Windows app availability.</p>
+      </a>
 
-## Platform availability
+      <a class="card" href="/faq.html">
+        <div class="card-icon">💬</div>
+        <h3>FAQ</h3>
+        <p>Common questions about SoMerch, fulfillment, warehousing, and platform workflows.</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-SoMerch is available across web, mobile, and desktop platforms.
+<section class="section">
+  <div class="container band">
+    <div class="section-header">
+      <p class="section-kicker">Built for distributed teams</p>
+      <h2>Corporate merch is no longer a one-office bulk order.</h2>
+      <p>
+        SoMerch connects service, software, production, warehousing, and fulfillment
+        into one managed system for HR, operations, procurement, marketing, office teams,
+        and agencies.
+      </p>
+    </div>
 
-| Platform | Link |
-|---|---|
-| Web App | [app.somerch.co](https://app.somerch.co) |
-| iOS App | [SoMerch on the App Store](https://apps.apple.com/us/app/somerch-company-merch/id6771002983) |
-| Android App | [SoMerch on Google Play](https://play.google.com/store/apps/details?id=co.somerch.app) |
-| Windows App | [SoMerch on Microsoft Store](https://apps.microsoft.com/detail/9nlpq3cps6k5) |
+    <div class="feature-grid">
+      <div class="feature">
+        <strong>Curated catalog</strong>
+        <p>Practical, durable, brand-safe merch selected for real company use cases.</p>
+      </div>
+      <div class="feature">
+        <strong>In-house production</strong>
+        <p>Production know-how and quality control before items move to fulfillment.</p>
+      </div>
+      <div class="feature">
+        <strong>Inventory visibility</strong>
+        <p>Stock, reserved items, warehousing, kitting, and repeat-order visibility.</p>
+      </div>
+      <div class="feature">
+        <strong>EU-wide fulfillment</strong>
+        <p>Multi-address shipping for employees, offices, events, partners, and teams.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
----
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <p class="section-kicker">Platform availability</p>
+      <h2>Use SoMerch from web, mobile, or desktop.</h2>
+      <p>Teams can manage company merch workflows from browser, iOS, Android, and Windows.</p>
+    </div>
 
-## Public GitHub resources
+    <div class="platform-grid">
+      <a class="platform" href="https://app.somerch.co">
+        <span>🌐</span>
+        <strong>Web App</strong>
+        <small>app.somerch.co</small>
+      </a>
 
-| Repository | Purpose |
-|---|---|
-| [public-roadmap](https://github.com/SoMerch/public-roadmap) | Public roadmap for platform features, fulfillment workflows, and future product direction. |
-| [api-docs](https://github.com/SoMerch/api-docs) | Developer-oriented documentation for future API, webhook, order, inventory, and shipment capabilities. |
-| [product-data-schema](https://github.com/SoMerch/product-data-schema) | Product data schemas and examples for merch items, variants, decoration methods, inventory, and shipping metadata. |
-| [brand-assets](https://github.com/SoMerch/brand-assets) | Official SoMerch brand assets, visuals, screenshots, badges, and media resources. |
+      <a class="platform" href="https://apps.apple.com/us/app/somerch-company-merch/id6771002983">
+        <span></span>
+        <strong>iOS App</strong>
+        <small>App Store</small>
+      </a>
 
----
+      <a class="platform" href="https://play.google.com/store/apps/details?id=co.somerch.app">
+        <span>▶</span>
+        <strong>Android App</strong>
+        <small>Google Play</small>
+      </a>
 
-## Useful links
-
-- Website: [somerch.co](https://somerch.co)
-- Web App: [app.somerch.co](https://app.somerch.co)
-- GitHub: [github.com/SoMerch](https://github.com/SoMerch)
-- Contact: [support@somerch.co](mailto:support@somerch.co)
-
----
-
-**One partner. One platform. Merch that moves with your team.**
+      <a class="platform" href="https://apps.microsoft.com/detail/9nlpq3cps6k5">
+        <span>⊞</span>
+        <strong>Windows App</strong>
+        <small>Microsoft Store</small>
+      </a>
+    </div>
+  </div>
+</section>

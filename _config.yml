@@ -1,7 +1,5 @@
 title: SoMerch Docs
 description: Public documentation for SoMerch workflows, platform features, fulfillment, warehousing, EU shipping, approvals, and managed corporate merch operations.
-theme: jekyll-theme-minimal
-
 url: "https://docs.somerch.co"
 baseurl: ""
 

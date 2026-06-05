@@ -1,3 +1,25 @@
+---
+layout: default
+---
+
+<section class="content-page">
+  <div class="container content-shell">
+    <aside class="side-nav">
+      <strong>SoMerch Docs</strong>
+      <a href="/">Overview</a>
+      <a href="/getting-started.html">Getting Started</a>
+      <a href="/platform-availability.html">Platform Availability</a>
+      <a href="/how-somerch-works.html">How SoMerch Works</a>
+      <a href="/order-lifecycle.html">Order Lifecycle</a>
+      <a href="/approvals.html">Approvals</a>
+      <a href="/inventory-and-warehousing.html">Inventory and Warehousing</a>
+      <a href="/fulfillment-and-shipping.html">Fulfillment and Shipping</a>
+      <a href="/employee-gifting.html">Employee Gifting</a>
+      <a href="/faq.html">FAQ</a>
+    </aside>
+
+    <article class="doc-content">
+
 # How SoMerch Works
 
 SoMerch connects corporate merch planning, production, storage, and fulfillment into one managed workflow.
@@ -114,3 +136,8 @@ Fulfillment may include:
 ## Summary
 
 SoMerch gives distributed companies one place to manage corporate merch from idea to delivery.
+
+
+    </article>
+  </div>
+</section>
