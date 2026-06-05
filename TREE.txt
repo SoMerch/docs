@@ -1,20 +1,5 @@
-somerch-docs-static-html-site/
-├── CNAME
+somerch-docs-sitemap-files/
+├── sitemap.xml
+├── robots.txt
 ├── README.md
-├── index.html
-├── getting-started.html
-├── platform-availability.html
-├── how-somerch-works.html
-├── order-lifecycle.html
-├── approvals.html
-├── inventory-and-warehousing.html
-├── fulfillment-and-shipping.html
-├── employee-gifting.html
-├── faq.html
-├── 404.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   └── img/
-│       └── favicon.svg
 └── TREE.txt

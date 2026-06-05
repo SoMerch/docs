@@ -1,23 +1,13 @@
-# SoMerch Docs
+# SoMerch Docs Sitemap Files
 
-Static documentation site for `docs.somerch.co`.
+Upload these files to the root of the `SoMerch/docs` repository:
 
-This version uses standalone HTML pages to avoid Markdown/Jekyll layout rendering issues on GitHub Pages.
+- `sitemap.xml`
+- `robots.txt`
 
-## Important
+After GitHub Pages deploys, check:
 
-If previous Markdown pages exist in the repository, delete them before uploading this version:
+- https://docs.somerch.co/sitemap.xml
+- https://docs.somerch.co/robots.txt
 
-- `getting-started.md`
-- `platform-availability.md`
-- `how-somerch-works.md`
-- `order-lifecycle.md`
-- `approvals.md`
-- `inventory-and-warehousing.md`
-- `fulfillment-and-shipping.md`
-- `employee-gifting.md`
-- `faq.md`
-- `index.md`
-- `404.md`
-
-Keep the HTML versions instead.
+Then submit the sitemap in Google Search Console.
