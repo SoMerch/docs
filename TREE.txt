@@ -1,23 +1,20 @@
-somerch-docs-brand-aligned-site/
-├── _config.yml
+somerch-docs-static-html-site/
 ├── CNAME
-├── _layouts/
-│   ├── default.html
-│   └── doc.html
+├── README.md
+├── index.html
+├── getting-started.html
+├── platform-availability.html
+├── how-somerch-works.html
+├── order-lifecycle.html
+├── approvals.html
+├── inventory-and-warehousing.html
+├── fulfillment-and-shipping.html
+├── employee-gifting.html
+├── faq.html
+├── 404.html
 ├── assets/
 │   ├── css/
 │   │   └── style.css
 │   └── img/
 │       └── favicon.svg
-├── index.md
-├── getting-started.md
-├── platform-availability.md
-├── how-somerch-works.md
-├── order-lifecycle.md
-├── approvals.md
-├── inventory-and-warehousing.md
-├── fulfillment-and-shipping.md
-├── employee-gifting.md
-├── faq.md
-├── 404.md
 └── TREE.txt
