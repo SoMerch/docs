@@ -1,24 +1,8 @@
 ---
-layout: default
+layout: doc
+title: Approvals
+description: Approval workflows, budget tags, and internal review steps.
 ---
-
-<section class="content-page">
-  <div class="container content-shell">
-    <aside class="side-nav">
-      <strong>SoMerch Docs</strong>
-      <a href="/">Overview</a>
-      <a href="/getting-started.html">Getting Started</a>
-      <a href="/platform-availability.html">Platform Availability</a>
-      <a href="/how-somerch-works.html">How SoMerch Works</a>
-      <a href="/order-lifecycle.html">Order Lifecycle</a>
-      <a href="/approvals.html">Approvals</a>
-      <a href="/inventory-and-warehousing.html">Inventory and Warehousing</a>
-      <a href="/fulfillment-and-shipping.html">Fulfillment and Shipping</a>
-      <a href="/employee-gifting.html">Employee Gifting</a>
-      <a href="/faq.html">FAQ</a>
-    </aside>
-
-    <article class="doc-content">
 
 # Approvals
 
@@ -80,8 +64,3 @@ A SoMerch approval workflow may include:
 | Rejected | The order cannot continue in its current form. |
 | Changes Requested | Updates are needed before approval. |
 | Cancelled | The approval request is no longer active. |
-
-
-    </article>
-  </div>
-</section>
