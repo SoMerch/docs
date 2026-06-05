@@ -5,8 +5,6 @@ theme: jekyll-theme-minimal
 url: "https://somerch.github.io"
 baseurl: "/docs"
 
-logo: ""
-
 show_downloads: false
 
 github:
