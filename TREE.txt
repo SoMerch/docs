@@ -1,0 +1,6 @@
+somerch-docs-github-pages-files/
+├── _config.yml
+├── index.md
+├── 404.md
+├── CNAME.example
+└── TREE.txt

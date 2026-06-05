@@ -1,0 +1,23 @@
+title: SoMerch Docs
+description: Public documentation for SoMerch workflows, platform features, fulfillment, warehousing, EU shipping, approvals, and managed corporate merch operations.
+theme: jekyll-theme-minimal
+
+url: "https://somerch.github.io"
+baseurl: "/docs"
+
+logo: ""
+
+show_downloads: false
+
+github:
+  is_project_page: true
+  repository_url: https://github.com/SoMerch/docs
+
+plugins:
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
