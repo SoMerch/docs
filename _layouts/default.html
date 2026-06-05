@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% seo %}
+    <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="SoMerch Docs home">
+          <img src="{{ '/assets/img/somerch-logo.svg' | relative_url }}" alt="SoMerch logo">
+          <span>Docs</span>
+        </a>
+
+        <nav class="top-nav" aria-label="Main navigation">
+          <a href="{{ '/' | relative_url }}">Overview</a>
+          <a href="{{ '/getting-started.html' | relative_url }}">Getting started</a>
+          <a href="{{ '/platform-availability.html' | relative_url }}">Apps</a>
+          <a href="{{ '/faq.html' | relative_url }}">FAQ</a>
+          <a class="nav-button" href="https://somerch.co">Website</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-brand">
+            <img src="{{ '/assets/img/somerch-logo-mark.svg' | relative_url }}" alt="SoMerch mark">
+            <strong>SoMerch</strong>
+          </div>
+          <p>Corporate merch, managed from idea to delivery.</p>
+        </div>
+
+        <div>
+          <h2>Platform</h2>
+          <a href="https://app.somerch.co">Web App</a>
+          <a href="https://apps.apple.com/us/app/somerch-company-merch/id6771002983">iOS App</a>
+          <a href="https://play.google.com/store/apps/details?id=co.somerch.app">Android App</a>
+          <a href="https://apps.microsoft.com/detail/9nlpq3cps6k5">Windows App</a>
+        </div>
+
+        <div>
+          <h2>GitHub</h2>
+          <a href="https://github.com/SoMerch">Organization</a>
+          <a href="https://github.com/SoMerch/public-roadmap">Public Roadmap</a>
+          <a href="https://github.com/SoMerch/api-docs">API Docs</a>
+          <a href="https://github.com/SoMerch/brand-assets">Brand Assets</a>
+        </div>
+
+        <div>
+          <h2>Contact</h2>
+          <a href="https://somerch.co">somerch.co</a>
+          <a href="mailto:support@somerch.co">support@somerch.co</a>
+          <a href="https://www.linkedin.com/company/somerch">LinkedIn</a>
+          <a href="https://github.com/SoMerch">GitHub</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
