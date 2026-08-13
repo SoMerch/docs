@@ -1,5 +1,28 @@
-somerch-docs-sitemap-files/
-├── sitemap.xml
-├── robots.txt
+docs/
+├── 404.html
 ├── README.md
-└── TREE.txt
+├── TREE.txt
+├── CNAME
+├── index.html
+├── getting-started.html
+├── how-somerch-works.html
+├── order-lifecycle.html
+├── approvals.html
+├── inventory-and-warehousing.html
+├── fulfillment-and-shipping.html
+├── employee-gifting.html
+├── platform-availability.html
+├── faq.html
+├── merch-atlas.html
+├── merch-calendar.html
+├── merch-guide.html
+├── gift-ideas.html
+├── merch-consultant.html
+├── public-mcp.html
+├── robots.txt
+├── sitemap.xml
+└── assets/
+    ├── css/
+    │   └── style.css
+    └── img/
+        └── favicon.svg

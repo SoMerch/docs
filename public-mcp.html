@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SoMerch FAQ</title>
-  <meta name="description" content="Common questions about SoMerch, managed merch operations, warehousing, fulfillment, and platform workflows.">
+  <title>Public MCP + API — Integrate with SoMerch</title>
+  <meta name="description" content="SoMerch offers a public MCP server for AI agent integration and a public REST API with OAuth, webhooks, events, and OpenAPI specification for custom integrations.">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -19,8 +19,9 @@
       <a class="" href="/index.html">Overview</a>
 <a class="" href="/getting-started.html">Getting started</a>
 <a class="" href="/how-somerch-works.html">How it works</a>
+<a class="active" href="/public-mcp.html">Public MCP + API</a>
 <a class="" href="/platform-availability.html">Apps</a>
-<a class="active" href="/faq.html">FAQ</a>
+<a class="" href="/faq.html">FAQ</a>
       <a class="nav-cta" href="https://somerch.co">Make a Request</a>
     </nav>
   </div>
@@ -46,38 +47,79 @@
 <a class="" href="/merch-guide.html">Merch Guide</a>
 <a class="" href="/gift-ideas.html">Gift Ideas</a>
 <a class="" href="/merch-consultant.html">Merch Consultant</a>
-<a class="" href="/public-mcp.html">Public MCP + API</a>
+<a class="active" href="/public-mcp.html">Public MCP + API</a>
 <a class="" href="/faq.html">FAQ</a>
 </aside>
 
     <article class="doc-content">
       
-<h1>SoMerch FAQ</h1>
-<p>Common questions about SoMerch, managed merch operations, warehousing, fulfillment, and platform workflows.</p>
+<h1>Public MCP Server and REST API</h1>
+<p>SoMerch offers a public MCP (Model Context Protocol) server for AI agent integration and a public REST API for custom integrations, automation, and data access.</p>
 
 <hr>
 
-<h2>What is SoMerch?</h2>
-<p>SoMerch is a software-powered corporate merch platform and service partner for distributed companies across Europe.</p>
-<p>It helps teams plan, produce, store, and ship branded merch from one place.</p>
+<h2>Public MCP Server</h2>
+<p>The MCP server allows AI agents and MCP-compatible clients to browse the SoMerch product catalog, search products, and explore merch data programmatically.</p>
 
-<h2>Is SoMerch only a merch supplier?</h2>
-<p>No. SoMerch combines corporate merch services with software workflows for catalog browsing, quote requests, order tracking, inventory visibility, approvals, and fulfillment.</p>
+<h3>Endpoint</h3>
+<p><code>https://somerch.co/mcp</code></p>
 
-<h2>Who is SoMerch for?</h2>
-<p>SoMerch is designed for distributed companies, remote-first teams, companies with multiple offices, HR, operations, marketing, procurement, agencies, and studios.</p>
+<h3>How to connect</h3>
+<p>Add the server to any MCP-compatible client:</p>
+<pre>{
+  "mcpServers": {
+    "somerch-public": {
+      "url": "https://somerch.co/mcp"
+    }
+  }
+}</pre>
 
-<h2>Does SoMerch support multi-address shipping?</h2>
-<p>Yes. SoMerch is designed to support shipments to employees, offices, events, and partners across multiple addresses and countries.</p>
+<h3>Discovery</h3>
+<ul>
+  <li>MCP server card: <code>somerch.co/.well-known/mcp/server-card.json</code></li>
+  <li>Agent skills: <code>somerch.co/.well-known/agent-skills/</code></li>
+</ul>
 
-<h2>Does SoMerch provide warehousing?</h2>
-<p>Yes. SoMerch can store and manage inventory for customers that need ongoing fulfillment, repeat orders, or distributed shipping.</p>
+<h3>Supported clients</h3>
+<p>Claude, ChatGPT, Cursor, OpenCode, and any other MCP-compatible tool. No authentication required for read-only catalog access.</p>
 
-<h2>Does SoMerch offer apps?</h2>
-<p>Yes. SoMerch is available on web, iOS, Android, and Windows.</p>
+<hr>
 
-<h2>How do I contact SoMerch?</h2>
-<p>You can contact the SoMerch team through <a href="https://somerch.co">somerch.co</a> or <a href="mailto:support@somerch.co">support@somerch.co</a>.</p>
+<h2>Public REST API</h2>
+<p>The REST API provides programmatic access to SoMerch platform data with OAuth authentication, webhooks, and event streams.</p>
+
+<h3>Base URL</h3>
+<p><code>https://somerch.co/api/public/v1/</code></p>
+
+<h3>OpenAPI spec</h3>
+<p><a href="https://somerch.co/api/public/openapi.json">somerch.co/api/public/openapi.json</a></p>
+
+<h3>API resources</h3>
+<ul>
+  <li><strong>Actions</strong> — Pre-defined integration actions</li>
+  <li><strong>Connections</strong> — Manage OAuth connections</li>
+  <li><strong>Events</strong> — Event stream for integration triggers</li>
+  <li><strong>Jobs</strong> — Asynchronous job management</li>
+  <li><strong>Webhooks</strong> — Webhook subscription management with signature verification</li>
+  <li><strong>Providers</strong> — Available OAuth providers</li>
+  <li><strong>Audit logs</strong> — Integration activity records</li>
+</ul>
+
+<h3>Authentication</h3>
+<p>The API uses OAuth 2.0 with support for multiple providers and per-organization scoping.</p>
+
+<h3>Webhooks</h3>
+<p>Webhook events are sent for order changes, inventory updates, shipment status changes, approval events, and fulfillment status. Each payload includes a signature for verification.</p>
+
+<hr>
+
+<h2>Integration docs</h2>
+<p>For the full API reference, interactive documentation, and integration guides:</p>
+<ul>
+  <li><a href="https://somerch.co/docs/integrations">Integration documentation →</a></li>
+  <li><a href="https://somerch.co/api/public/openapi.json">OpenAPI specification →</a></li>
+  <li><a href="https://github.com/SoMerch/api-docs">API docs on GitHub →</a></li>
+</ul>
 
     </article>
   </div>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://docs.somerch.co/</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-08-13</lastmod>
   </url>
   <url>
     <loc>https://docs.somerch.co/getting-started.html</loc>
@@ -39,5 +39,29 @@
   <url>
     <loc>https://docs.somerch.co/faq.html</loc>
     <lastmod>2026-06-05</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/merch-atlas.html</loc>
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/merch-calendar.html</loc>
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/merch-guide.html</loc>
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/gift-ideas.html</loc>
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/merch-consultant.html</loc>
+    <lastmod>2026-08-13</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/public-mcp.html</loc>
+    <lastmod>2026-08-13</lastmod>
   </url>
 </urlset>
