@@ -19,6 +19,10 @@ docs/
 ├── gift-ideas.html
 ├── merch-consultant.html
 ├── public-mcp.html
+├── chatgpt-integration.html
+├── zapier-integration.html
+├── openapi.html
+├── openapi.json
 ├── robots.txt
 ├── sitemap.xml
 └── assets/

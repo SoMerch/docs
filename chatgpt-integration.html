@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Order Lifecycle</title>
-  <meta name="description" content="Typical order stages from quote to fulfillment.">
+  <title>ChatGPT Integration - Plan Merch with SoMerch in ChatGPT</title>
+  <meta name="description" content="Connect SoMerch to ChatGPT to search products, plan merch projects, compare options, and request quotes directly in a chat conversation.">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -19,6 +19,7 @@
       <a class="" href="/index.html">Overview</a>
 <a class="" href="/getting-started.html">Getting started</a>
 <a class="" href="/how-somerch-works.html">How it works</a>
+<a class="active" href="/chatgpt-integration.html">ChatGPT</a>
 <a class="" href="/platform-availability.html">Apps</a>
 <a class="" href="/faq.html">FAQ</a>
       <a class="nav-cta" href="https://somerch.co">Make a Request</a>
@@ -36,7 +37,7 @@
 <a class="" href="/getting-started.html">Getting Started</a>
 <a class="" href="/platform-availability.html">Platform Availability</a>
 <a class="" href="/how-somerch-works.html">How SoMerch Works</a>
-<a class="active" href="/order-lifecycle.html">Order Lifecycle</a>
+<a class="" href="/order-lifecycle.html">Order Lifecycle</a>
 <a class="" href="/approvals.html">Approvals</a>
 <a class="" href="/inventory-and-warehousing.html">Inventory and Warehousing</a>
 <a class="" href="/fulfillment-and-shipping.html">Fulfillment and Shipping</a>
@@ -47,7 +48,7 @@
 <a class="" href="/gift-ideas.html">Gift Ideas</a>
 <a class="" href="/merch-consultant.html">Merch Consultant</a>
 <a class="" href="/public-mcp.html">Public MCP + API</a>
-<a class="" href="/chatgpt-integration.html">ChatGPT Integration</a>
+<a class="active" href="/chatgpt-integration.html">ChatGPT Integration</a>
 <a class="" href="/zapier-integration.html">Zapier Integration</a>
 <a class="" href="/openapi.html">API Reference</a>
 <a class="" href="/faq.html">FAQ</a>
@@ -55,44 +56,45 @@
 
     <article class="doc-content">
       
-<h1>Order Lifecycle</h1>
-<p>This page explains the typical lifecycle of a SoMerch order.</p>
-<p>The exact workflow may vary depending on product type, branding method, stock availability, customer approvals, and shipping requirements.</p>
+<h1>ChatGPT Integration</h1>
+<p>The SoMerch ChatGPT plugin lets teams research products, plan merch projects, and request quotes directly inside ChatGPT. It connects through the SoMerch public MCP server and does not require a separate login for browsing and planning.</p>
 
 <hr>
 
-<h2>Typical order stages</h2>
-<table>
-  <thead><tr><th>Stage</th><th>Description</th></tr></thead>
-  <tbody>
-    <tr><td>Draft</td><td>The order idea or request is being prepared.</td></tr>
-    <tr><td>Quote Requested</td><td>SoMerch reviews the request and prepares pricing and feasibility details.</td></tr>
-    <tr><td>Quoted</td><td>The customer receives pricing, production, and delivery information.</td></tr>
-    <tr><td>Approval Required</td><td>The order needs internal customer approval before moving forward.</td></tr>
-    <tr><td>Approved</td><td>The order has been approved.</td></tr>
-    <tr><td>In Production</td><td>Branding or production has started.</td></tr>
-    <tr><td>Quality Check</td><td>Products are reviewed before fulfillment or storage.</td></tr>
-    <tr><td>Ready for Fulfillment</td><td>Items are ready to be packed, stored, or shipped.</td></tr>
-    <tr><td>Fulfilled</td><td>The order has been completed.</td></tr>
-    <tr><td>On Hold</td><td>The order is paused due to missing information, stock, approval, or payment.</td></tr>
-  </tbody>
-</table>
-
-<hr>
-
-<h2>What can affect the order timeline</h2>
+<h2>What you can do</h2>
 <ul>
-  <li>product availability</li>
-  <li>branding method</li>
-  <li>artwork readiness</li>
-  <li>sample approval</li>
-  <li>order quantity</li>
-  <li>warehouse intake</li>
-  <li>packaging requirements</li>
-  <li>number of delivery addresses</li>
-  <li>destination countries</li>
-  <li>carrier capacity</li>
-  <li>seasonal demand</li>
+  <li>Search the SoMerch catalog by category, brand, or collection</li>
+  <li>Compare products with quantity-aware pricing and MOQ</li>
+  <li>Generate a merch plan with up to three tiered options and feasibility checks</li>
+  <li>Check deadlines, budgets, and market support for the EU and Switzerland</li>
+  <li>Submit a quote request with a built-in confirmation step</li>
+  <li>Work in English, German, or French</li>
+</ul>
+
+<h2>How to connect</h2>
+<ol>
+  <li>Open ChatGPT and go to <strong>Settings &gt; Connectors &gt; Advanced</strong> (Developer mode).</li>
+  <li>Add a new connector with the URL <code>https://somerch.co/mcp</code>.</li>
+  <li>Save and enable the connector.</li>
+</ol>
+<p>You can then ask questions like:</p>
+<ul>
+  <li>"Find sustainable hoodies for a 100-person onboarding pack."</li>
+  <li>"Plan a merch kit for a 200-person event in Germany with a 6-week deadline."</li>
+  <li>"Compare drinkware options under €20 for a team store."</li>
+  <li>"Submit a quote request for my plan."</li>
+</ul>
+
+<h2>Quote requests</h2>
+<p>Quote submission is two-phase. ChatGPT first shows a confirmation preview, and only a confirmed request with a matching single-use token is submitted. Personal email addresses are rejected, and repeated submissions are idempotent.</p>
+
+<h2>Privacy</h2>
+<p>Plan data is kept for 24 hours, contact data is only stored after a confirmed quote submission, and no ChatGPT user identifier, cookies, or IP addresses are persisted.</p>
+
+<h2>Learn more</h2>
+<ul>
+  <li><a href="/public-mcp.html">Public MCP + API documentation →</a></li>
+  <li><a href="https://github.com/SoMerch/api-docs">API docs on GitHub →</a></li>
 </ul>
 
     </article>

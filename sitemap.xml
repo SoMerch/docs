@@ -62,6 +62,22 @@
   </url>
   <url>
     <loc>https://docs.somerch.co/public-mcp.html</loc>
-    <lastmod>2026-08-13</lastmod>
+    <lastmod>2026-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/chatgpt-integration.html</loc>
+    <lastmod>2026-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/zapier-integration.html</loc>
+    <lastmod>2026-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/openapi.html</loc>
+    <lastmod>2026-08-27</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.somerch.co/openapi.json</loc>
+    <lastmod>2026-08-27</lastmod>
   </url>
 </urlset>

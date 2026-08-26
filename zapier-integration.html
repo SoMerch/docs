@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Order Lifecycle</title>
-  <meta name="description" content="Typical order stages from quote to fulfillment.">
+  <title>Zapier Integration - Automate SoMerch Workflows</title>
+  <meta name="description" content="Connect SoMerch to Zapier to automate merch operations with triggers for new orders, shipments, and quote requests, plus searches and actions for products, orders, plans, and quotes.">
   <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -19,6 +19,7 @@
       <a class="" href="/index.html">Overview</a>
 <a class="" href="/getting-started.html">Getting started</a>
 <a class="" href="/how-somerch-works.html">How it works</a>
+<a class="active" href="/zapier-integration.html">Zapier</a>
 <a class="" href="/platform-availability.html">Apps</a>
 <a class="" href="/faq.html">FAQ</a>
       <a class="nav-cta" href="https://somerch.co">Make a Request</a>
@@ -36,7 +37,7 @@
 <a class="" href="/getting-started.html">Getting Started</a>
 <a class="" href="/platform-availability.html">Platform Availability</a>
 <a class="" href="/how-somerch-works.html">How SoMerch Works</a>
-<a class="active" href="/order-lifecycle.html">Order Lifecycle</a>
+<a class="" href="/order-lifecycle.html">Order Lifecycle</a>
 <a class="" href="/approvals.html">Approvals</a>
 <a class="" href="/inventory-and-warehousing.html">Inventory and Warehousing</a>
 <a class="" href="/fulfillment-and-shipping.html">Fulfillment and Shipping</a>
@@ -48,51 +49,66 @@
 <a class="" href="/merch-consultant.html">Merch Consultant</a>
 <a class="" href="/public-mcp.html">Public MCP + API</a>
 <a class="" href="/chatgpt-integration.html">ChatGPT Integration</a>
-<a class="" href="/zapier-integration.html">Zapier Integration</a>
+<a class="active" href="/zapier-integration.html">Zapier Integration</a>
 <a class="" href="/openapi.html">API Reference</a>
 <a class="" href="/faq.html">FAQ</a>
 </aside>
 
     <article class="doc-content">
       
-<h1>Order Lifecycle</h1>
-<p>This page explains the typical lifecycle of a SoMerch order.</p>
-<p>The exact workflow may vary depending on product type, branding method, stock availability, customer approvals, and shipping requirements.</p>
+<h1>Zapier Integration</h1>
+<p>The SoMerch Zapier app connects merch operations to 8000+ apps through Zapier. Teams can react to orders, shipments, and quote requests and take actions without writing code.</p>
 
 <hr>
 
-<h2>Typical order stages</h2>
+<h2>Connection</h2>
+<p>Search for "SoMerch" in Zapier and connect your account with OAuth. Tokens, scopes, and refresh flows are handled automatically for your organization.</p>
+
+<h2>Triggers</h2>
 <table>
-  <thead><tr><th>Stage</th><th>Description</th></tr></thead>
+  <thead><tr><th>Trigger</th><th>Fires when</th></tr></thead>
   <tbody>
-    <tr><td>Draft</td><td>The order idea or request is being prepared.</td></tr>
-    <tr><td>Quote Requested</td><td>SoMerch reviews the request and prepares pricing and feasibility details.</td></tr>
-    <tr><td>Quoted</td><td>The customer receives pricing, production, and delivery information.</td></tr>
-    <tr><td>Approval Required</td><td>The order needs internal customer approval before moving forward.</td></tr>
-    <tr><td>Approved</td><td>The order has been approved.</td></tr>
-    <tr><td>In Production</td><td>Branding or production has started.</td></tr>
-    <tr><td>Quality Check</td><td>Products are reviewed before fulfillment or storage.</td></tr>
-    <tr><td>Ready for Fulfillment</td><td>Items are ready to be packed, stored, or shipped.</td></tr>
-    <tr><td>Fulfilled</td><td>The order has been completed.</td></tr>
-    <tr><td>On Hold</td><td>The order is paused due to missing information, stock, approval, or payment.</td></tr>
+    <tr><td>New Order</td><td>A new order is created</td></tr>
+    <tr><td>Order Status Changed</td><td>An order status changes</td></tr>
+    <tr><td>New Shipment</td><td>A new shipment is created</td></tr>
+    <tr><td>Shipment Updated</td><td>Shipment details change</td></tr>
+    <tr><td>New Quote Request</td><td>A quote request is submitted</td></tr>
   </tbody>
 </table>
+<p>Triggers use webhooks with an automatic polling fallback, so zaps keep working even when webhook delivery is unavailable.</p>
 
-<hr>
-
-<h2>What can affect the order timeline</h2>
+<h2>Searches</h2>
 <ul>
-  <li>product availability</li>
-  <li>branding method</li>
-  <li>artwork readiness</li>
-  <li>sample approval</li>
-  <li>order quantity</li>
-  <li>warehouse intake</li>
-  <li>packaging requirements</li>
-  <li>number of delivery addresses</li>
-  <li>destination countries</li>
-  <li>carrier capacity</li>
-  <li>seasonal demand</li>
+  <li><strong>Find Products</strong> - search the catalog with category and price filters</li>
+  <li><strong>Find Product</strong> - get a single product by slug</li>
+  <li><strong>Find Order</strong> - look up an existing order</li>
+</ul>
+
+<h2>Actions</h2>
+<ul>
+  <li><strong>Submit Quote Request</strong> - create a quote request with consent to terms; idempotent so retries never double-fire</li>
+  <li><strong>Create Merch Plan</strong> - generate a merch plan with tiered options and a shareable widget link</li>
+</ul>
+
+<h2>Reliability</h2>
+<ul>
+  <li>Retries with exponential backoff and automatic deactivation after repeated failures</li>
+  <li>Signed deliveries with HMAC verification support</li>
+  <li>Idempotency keys on write actions (24-hour TTL)</li>
+</ul>
+
+<h2>Developer API documentation</h2>
+<p>SoMerch publishes complete API documentation covering every endpoint the Zapier app uses (OAuth 2.0, triggers, actions, webhooks, and resources):</p>
+<ul>
+  <li><a href="/openapi.html">Interactive OpenAPI reference →</a></li>
+  <li><a href="/openapi.json">OpenAPI 3.1 specification (JSON) →</a></li>
+  <li><a href="https://github.com/SoMerch/api-docs">SoMerch api-docs on GitHub →</a></li>
+</ul>
+
+<h2>Learn more</h2>
+<ul>
+  <li><a href="/public-mcp.html">Public MCP + API documentation →</a></li>
+  <li><a href="https://github.com/SoMerch/api-docs">API docs on GitHub →</a></li>
 </ul>
 
     </article>
