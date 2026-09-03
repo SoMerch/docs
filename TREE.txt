@@ -18,6 +18,7 @@ docs/
 ├── merch-guide.html
 ├── gift-ideas.html
 ├── merch-consultant.html
+├── integrations.html
 ├── public-mcp.html
 ├── chatgpt-integration.html
 ├── zapier-integration.html
