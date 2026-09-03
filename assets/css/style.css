@@ -187,6 +187,20 @@ a {
   border-color: rgba(17, 24, 15, 0.12);
 }
 
+.notice {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border: 1px solid rgba(17, 24, 15, 0.12);
+  border-left: 4px solid var(--lime);
+  border-radius: var(--radius-md);
+  background: var(--lime-soft);
+  color: var(--dark);
+}
+
+.notice strong {
+  font-weight: 800;
+}
+
 .hero-card {
   padding: 26px;
   border-radius: var(--radius-xl);
